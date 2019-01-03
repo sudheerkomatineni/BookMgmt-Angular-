@@ -1,0 +1,22 @@
+<html ng-app='bookmgmt'>
+
+<head>
+    <title>Book Management System</title>
+    <link rel="stylesheet" href="bookmgmt.css">
+    <script src='bookmgmt.js'></script>
+</head>
+
+<body ng-controller="MainCtrl">
+    <div class='loader' ng-if='loading'>
+    </div>
+    <div class="container mainContCls">
+        <div ng-include="'app/components/common/nav.html'">
+        </div>
+        <div ui-view class='mainView'>
+        </div>
+        <div ng-include="'app/components/common/footer.html'">
+        </div>
+    </div>
+</body>
+
+</html>
